@@ -1,7 +1,7 @@
 <app-header></app-header>
 
-<div class="scroll-container">
-  <router-outlet></router-outlet>
+<div class="scroll-container" [@routerTransition]="getState(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
 </div>
 <div class="backdrop"></div>
 

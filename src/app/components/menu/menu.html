@@ -3,6 +3,10 @@
     <a [routerLink]="['/home']" class="menu-link" (click)="closeMenu()"><i class="fa fa-home"></i> Home</a>
   </li>
 
+  <li class="menu-item" routerLinkActive="active">
+    <a [routerLink]="['/ngFor']" class="menu-link" (click)="closeMenu()"><i class="fa fa-home"></i> NgFor</a>
+  </li>
+
   <!--<li class="menu-item dropdown" [ngClass]="{'show': isPokemonMenuOpen}" routerLinkActive="active">
     <span class="menu-link" (click)="togglePokemonMenu()"><i class="fa fa-optin-monster"></i>PokeAPI</span>
 

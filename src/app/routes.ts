@@ -1,5 +1,6 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from './components/home/home';
+import {NgForComponent} from './components/ngFor/ngFor.component';
 
 export const ROUTES: Routes = [
   {
@@ -9,6 +10,16 @@ export const ROUTES: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: {
+      state: 'home'
+    }
+  },
+  {
+    path: 'ngFor',
+    component: NgForComponent,
+    data: {
+      state: 'ngFor'
+    }
   }
 ];
