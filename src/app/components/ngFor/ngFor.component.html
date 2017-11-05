@@ -1,1 +1,16 @@
 <h1>Animating ngFor</h1>
+
+<h2>Animates on enter &amp; leaving the page</h2>
+
+<div>
+  <div class="bubble" *ngFor="let number of startNumbers">{{ number }}</div>
+</div>
+
+<h2>Animates on button click &amp; leaving the page</h2>
+<button class="button" (click)="getData()">Get Data</button>
+<button class="button" (click)="clear()">Clear</button>
+<p>Simulates data from an API.</p>
+
+<div [@numberNgForAnimation]="delayedNumbers.length">
+  <div class="bubble" *ngFor="let number of delayedNumbers">{{ number }}</div>
+</div>
